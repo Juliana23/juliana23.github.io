@@ -3,10 +3,13 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 #title {
-    padding: 5px 50px;
+    padding: 5px 25px;
+}
+#parameters {
+  padding: 0 25px;
 }
 #section {
   display: flex;
   vertical-align: middle;
-  padding: 50px;
+  padding: 25px;
 }
