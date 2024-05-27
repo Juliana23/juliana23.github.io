@@ -63,6 +63,21 @@ function initializeData(numberColumnRow, width, height) {
 var grids = initializeData(4, 50, 50);
 drawBinaryImage(grids, 4, 50, 50);
 
+d3.select('#remove').on('click', function(d) {
+	var newData = d3.select('#size_list').node().value;
+		var arraySize = newData.split('size_');
+		arraySize.shift();
+		numberColumnRow = arraySize[0];
+		var width = 50;
+		var height = 50;
+		if (numberColumnRow > 10) {
+			width = width / 1.5;
+			height = height /1.5;
+		}
+		var grids = initializeData(numberColumnRow, width, height);
+		drawBinaryImage(grids, numberColumnRow, width, height);
+});
+
 function drawBinaryImage(grids, numberColumnRow, width, height) {
 	d3.select("#grid").selectAll("*").remove();
 	d3.select("#result").selectAll("*").remove();
@@ -142,8 +157,7 @@ var selectData = [{
 	id: "size_16"
 }];
 
-var dropDown = d3.select('#parameters').append('select')
-	.attr('id', 'size_list')
+var dropDown = d3.select('#size_list')
 	.on('change', function() {
 		var newData = d3.select(this).property('value');
 		var arraySize = newData.split('size_');
