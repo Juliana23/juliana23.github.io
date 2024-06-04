@@ -90,10 +90,10 @@ function drawBinaryImage(grids, numberColumnRow, width, height) {
 		.attr("width", squareWith)
 		.attr("height", squareHeight);
 		
-	var row = grid.selectAll(".row")
+	var row = grid.selectAll(".gridRow")
 		.data(grids.gridData)
 		.enter().append("g")
-		.attr("class", "row");
+		.attr("class", "gridRow");
 		
 	row.selectAll(".square")
 		.data(function(d) { return d; })
@@ -184,5 +184,3 @@ var options = dropDown.selectAll('option')
 	.attr('value', function(d) {
 		return d.id;
 	});
-
-////////////////
