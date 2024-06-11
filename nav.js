@@ -12,3 +12,7 @@ d3.select('#buttonHome').on('click', function(d) {
 	d3.select('#learn').style('display','none');
 	d3.select('#home').style('display','block');
 });
+
+d3.select('#print').on('click', function(d) {
+	window.print();
+});

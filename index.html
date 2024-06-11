@@ -1,5 +1,5 @@
 <!doctype html>
-    <html lang="en" class="h-100">
+    <html lang="en">
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,49 +11,60 @@
             <script src="https://d3js.org/d3.v4.min.js"></script>
             <link href="./homepage.css" rel="stylesheet">
         </head>
-        <body class="d-flex flex-column w-100 h-100 text-center text-white bg-dark">
-            <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-              <header class="mb-3">
-                <div>
-                  <h3 class="float-md-start mb-0">JA</h3>
-                  <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a id="buttonHome" class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a id="buttonLearn" class="nav-link" href="#">Learn</a>
-                    <!--<a id="contact" class="nav-link" href="#">Contact</a>-->
-                  </nav>
-                </div>
-              </header>
-            
-              <div class="d-flex flex-column w-100 h-100">
+        <body>
+          <header class="d-flex section-header p-3">
+            <h3 class="float-md-start mb-0">La JAVA de Léonard et Valentine</h3>
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a id="buttonHome" class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <a id="buttonLearn" class="nav-link" href="#">Apprendre</a>
+                <a id="buttonMeet" class="nav-link" href="#">Rencontrer L&V</a>
+                <a id="buttonContact" class="nav-link" href="#">Contact</a>
+              </nav>
+          </header>
+          <div class="d-flex p-3 flex-column text-center">  
+              <div class="sections d-flex flex-column">
                 <div class="section-home" id="home">
-                    <main class="px-3">
-                        <h1>Learning computer science</h1>
-                        <p class="lead">My name is Juliana Amblard. I am a computer engineer and mother of two young children. I am keen to combine my job with my love for children.</p>
-                        <p class="lead">
-                          <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
-                        </p>
-                      </main>
+                  <div class="home-image">
+                    <img alt="Home Page" src="./images/home.jpg">
                   </div>
-                  <div class="section-learn text-dark" id="learn">
-                        <h1 id="title">Binary image</h1>
-                        <section>
-                            <div id="parameters" class="d-flex px-3">
-                                <select id="size_list" class="form-select me-3"></select>
-                                <button id="remove" class="btn btn-light">Remove</button>
-                            </div>
-                            <div id="section" class="d-flex p-3">
-                                <div id="grid"></div>
-                                <div id="result"></div>
-                            </div>
-                        </section>
-                    </div>
+                  <div class="p-3">
+                    <main>
+                      <h1>Apprendre l'informatique</h1>
+                      <p class="lead">Je suis Juliana Amblard, ingénieur en informatique et maman de deux jeunes enfants. J'aimerais combiner mon travail avec mon amour pour les enfants, en enseignant l'informatique.</p>
+                      <p class="lead">
+                        <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
+                      </p>
+                    </main>
+                  </div>
+                </div>
+                <div class="section-learn" id="learn" style="display: none;">
+                  <h1 id="title">Image binaire</h1>
+                  <section>
+                      <div id="parameters" class="d-flex px-3">
+                          <select id="size_list" class="form-select me-3"></select>
+                          <button id="remove" class="btn btn-light">Effacer</button>
+                          <button id="print" class="btn btn-light">Imprimer</button>
+                      </div>
+                      <div id="section" class="d-flex p-3">
+                          <div id="grid"></div>
+                          <div id="result"></div>
+                      </div>
+                  </section>
+                </div>
               </div>
             </div>
-            
-              <footer class="mt-auto text-white-50">
-                <p>A website created by Juliana Amblard</p>
-              </footer>
-            </div>
+            <footer class="fixed-bottom">
+              <nav class="navbar navbar-expand sticky-bottom bg-dark py-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="small nav-link text-white" href="#">Legal notice</a></li>
+                    <li class="nav-item"><a class="small nav-link text-white" href="#">Contact</a></li>
+                    
+                </ul>
+                <span class="navbar-text text-white small">
+                    © Juliana Amblard
+                </span>
+              </nav>
+            </footer>
             <script src="grid.js" type="text/javascript"></script>
             <script src="nav.js" type="text/javascript"></script>
         </body>

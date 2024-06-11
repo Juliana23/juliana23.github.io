@@ -137,8 +137,8 @@ function drawBinaryImage(grids, numberColumnRow, width, height) {
 		.attr("id",function(d) { return "squareResult_" + d.id; })
 		.attr("x", function(d) { return d.x / 2; })
 		.attr("y", function(d) { return d.y / 2; })
-		.attr("width", function(d) { return d.width; })
-		.attr("height", function(d) { return d.height; })
+		.attr("width", function(d) { return d.width / 2; })
+		.attr("height", function(d) { return d.height / 2; })
 		.attr("dy", "1em")
 		.text("0");
 	

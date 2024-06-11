@@ -1,6 +1,7 @@
 /*
  * Globals
  */
+
  .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -29,8 +30,8 @@
  */
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: monospace;
+  min-height: 100%;
 }
 
 
@@ -38,17 +39,28 @@ body {
  * Header
  */
 
+ .fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.bg-gold {
+  background-color: #bba24f;
+}
+
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(131, 128, 128, 0.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgba(27, 26, 26, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -56,11 +68,48 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #000;
+  border-bottom-color: #000;
 }
 
-.section-learn {
-  display: none;
-  background-color: #fff;
+.section-header {
+  background-color: #bba24f;
+  justify-content: space-between;
+}
+
+/**
+** Footer
+**/
+
+.fixed-bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/**
+** Content
+**/
+
+.home-image {
+  width: 100%;
+   > img {
+    height: 300px;
+   } 
+}
+
+/**
+** Print
+**/
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+  #section {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 20%;
+  }
 }
