@@ -38,6 +38,9 @@ body {
 /*
  * Header
  */
+header {
+  height: 100px;
+}
 
 .navbar-custom {
   background-color: #bba24f;
