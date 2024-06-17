@@ -16,28 +16,92 @@
             <h3 class="float-md-start mb-0">La JAVA de Léonard et Valentine</h3>
               <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a id="buttonHome" class="nav-link active" aria-current="page" href="#">Accueil</a>
-                <a id="buttonLearn" class="nav-link" href="#">Apprendre</a>
+                <a id="buttonWorkshop" class="nav-link" href="#">Ateliers</a>
+                <a id="buttonLearn" class="nav-link" href="#">Jeux</a>
                 <a id="buttonMeet" class="nav-link" href="#">Rencontrer L&V</a>
-                <a id="buttonContact" class="nav-link" href="#">Contact</a>
+                <a id="buttonAbout" class="nav-link" href="#">À propos</a>
               </nav>
           </header>
-          <div class="d-flex p-3 flex-column text-center">  
+          <div class="d-flex p-3 flex-column">  
               <div class="sections d-flex flex-column">
-                <div class="section-home" id="home">
+                <div class="section-content section-home text-center" id="home">
                   <div class="home-image">
-                    <img alt="Home Page" src="./images/home.jpg">
+                    <img alt="Home Page" src="./images/home_.jpg">
                   </div>
                   <div class="p-3">
                     <main>
-                      <h1>Apprendre l'informatique</h1>
-                      <p class="lead">Je suis Juliana Amblard, ingénieur en informatique et maman de deux jeunes enfants. J'aimerais combiner mon travail avec mon amour pour les enfants, en enseignant l'informatique.</p>
+                      <h1>C'est parti pour l'aventure !</h1>
+                      <p class="lead">Léonard et Valentine veulent explorer de nouveaux
+                        mondes informatiques en essayant de comprendre le
+                        hardware de l'ordinateur, l'énergie dont ils ont besoin, leur langage et comment communiquer avec eux.
+                        Si toi aussi tu es curieux comme Léonard et Valentine alors joins-toi
+                        à eux et c'est parti pour l'aventure !</p>
                       <p class="lead">
                         <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
                       </p>
                     </main>
                   </div>
                 </div>
-                <div class="section-learn" id="learn" style="display: none;">
+                <div class="section-content section-workshop" id="workshop" style="display: none;">
+                  <div class="p-3">
+                    <div>
+                      <p>Je confectionne actuellement 5 ateliers :</p>
+                    </div>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">L'ordinateur</h5>
+                          <small>Dès 3 ans</small>
+                        </div>
+                        <p class="mb-1">L'objetif est de découvrir l'historique de 
+                        l'ordinateur et de quoi il se compose.</p>
+                        <small>Activités : histoire comptée, classer des objets, faire l'analogie avec 
+                        le corps humain, refaire l'historique, décortiquer un ordinateur et reconnaître ses 
+                        éléments.</small>
+                      </div>
+                      <div class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">L'électricité</h5>
+                          <small>Dès 3 ans</small>
+                        </div>
+                        <p class="mb-1">L'objetif est de comprendre l'énergie de 
+                          l'ordinateur qu'est l'électricité.</p>
+                        <small>Activités : histoire comptée, classifier les énergies, expériences d'une pile,  
+                          circuits électriques, construction d'une voiture.</small>
+                      </div>
+                      <div class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">L'électricité et l'ordinateur</h5>
+                          <small>Dès 3 ans</small>
+                        </div>
+                        <p class="mb-1">L'objetif est de faire le lien 
+                          entre l'ordinateur et l'électricité.</p>
+                        <small>Activités : fabrication d'un piano avec l'outil Makey-Makey.</small>
+                      </div>
+                      <div class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Le binaire</h5>
+                          <small>Dès 3 ans</small>
+                        </div>
+                        <p class="mb-1">L'objetif est de comprendre comment  
+                          l'ordinateur fonctionne.</p>
+                        <small>Activités : histoire comptée, faire une image binaire, 
+                        apprendre à compter en binaire.</small>
+                      </div>
+                      <div class="list-group-item list-group-item-action" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Les algorithmes</h5>
+                          <small>Dès 3 ans</small>
+                        </div>
+                        <p class="mb-1">L'objetif est de comprendre comment  
+                          intérarir avec l'ordinateur.</p>
+                        <small>Activités : histoire comptée, faire des algorithmes avec un testeur et un développeur, 
+                          avec des routines du quotidien, utiliser la robotique, écrire des algorithmes.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-content section-learn text-center" id="learn" style="display: none;">
                   <h1 id="title">Image binaire</h1>
                   <section>
                       <div id="parameters" class="d-flex px-3">
@@ -50,6 +114,56 @@
                           <div id="result"></div>
                       </div>
                   </section>
+                </div>
+                <div class="section-content section-meet text-center" id="meet" style="display: none;">
+                  <div class="d-flex">
+                    <div>
+                      <h1>Valentine</h1>
+                      <p class="lead">Je suis très ordonnée, tenace et j'aime que les choses soient carrées. 
+                        J'aime compter tout ce qui se trouve dans mon environnement en base 10, en base 2, à l'endroit, à l'envers... 
+                        Cependant, j'aime beaucoup rire et faire rire. Et j'ai 2 licornes.</p>
+                      <p class="lead">
+                        <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
+                      </p>
+                    </div>
+                    <div class="meet-image">
+                      <img alt="Valentine" src="./images/valentine.png">
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="meet-image">
+                      <img alt="Léonard" src="./images/leonard.png">
+                    </div>
+                    <div>
+                      <h1>Léonard</h1>
+                      <p class="lead">J'incarne la curiosité, j'aime comprendre comment les choses fonctionnent. 
+                        J'adore faire toute sorte de nouvelles expériences.  
+                        Mais aussi j'aime faire le fou savant et rigoler. Et j'ai deux lapins.</p>
+                      <p class="lead">
+                        <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-content section-about text-center" id="about" style="display: none;">
+                  <div class="home-image">
+                    <img alt="Me" src="./images/me_.jpg">
+                  </div>
+                  <div class="p-3">
+                    <main>
+                      <h1>Qui suis-je ?</h1>
+                      <p class="lead">Je suis Juliana Amblard, ingénieur en informatique 
+                        (diplôme de Master en Sciences Technologies de l'Information et de la Communication), 
+                        passionnée par les enfants, les animaux et la nature. J'ai travaillé plusieurs années 
+                        dans des entreprises privées en tant que développeuse web. 
+                        J'aimerais combiner mon travail avec mon amour pour les enfants, 
+                        en enseignant l'informatique dès le plus jeune âge. 
+                        Mon idée : Faire de l'informatique avec des enfants ET dans la forêt !</p>
+                      <p class="lead">
+                        <!--<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>-->
+                      </p>
+                    </main>
+                  </div>
                 </div>
               </div>
             </div>

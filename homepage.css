@@ -94,7 +94,15 @@ body {
 .home-image {
   width: 100%;
    > img {
+    height: 500px;
+   } 
+}
+
+.meet-image {
+  width: 100%;
+   > img {
     height: 300px;
+    border-radius: 50%;
    } 
 }
 
