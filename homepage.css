@@ -68,7 +68,7 @@ header {
 .home-image {
   width: 100%;
    > img {
-    height: 500px;
+    max-width: 100%;
    } 
 }
 
@@ -87,6 +87,12 @@ header {
 
 #size_list {
   width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  #size_list {
+    display: none;
+  }
 }
 
 /**
