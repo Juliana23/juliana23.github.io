@@ -85,6 +85,10 @@ header {
   padding-bottom: 20px;
 }
 
+#size_list {
+  width: 200px;
+}
+
 /**
 ** Print
 **/

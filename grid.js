@@ -122,8 +122,8 @@ function drawBinaryImage(grids, numberColumnRow, width, height) {
 	
 	var result = d3.select("#result")
 		.append("svg")
-		.attr("width", squareWith)
-		.attr("height", squareHeight);
+		.attr("width", squareWith / 2)
+		.attr("height", squareHeight / 2);
 		
 	var rowResult = result.selectAll(".rowResult")
 		.data(grids.gridResult)
