@@ -32,3 +32,9 @@ d3.selectAll('.buttonMeet').on('click', function(d) {
 	d3.select('#navMeet').classed('active', true);
 	d3.select('#meet').style('display','block');
 });
+
+d3.selectAll('.buttonLegal').on('click', function(d) {
+	d3.selectAll('.nav-link').classed('active', false);
+	d3.selectAll('.section-content').style('display','none');
+	d3.select('#legal').style('display','block');
+});
