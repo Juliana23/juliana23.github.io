@@ -80,6 +80,12 @@ header {
    }
 }
 
+.me-image {
+  > img {
+    max-width: 20%;
+  }
+}
+
 .container-custom {
   padding-top: 70px;
   padding-bottom: 20px;
