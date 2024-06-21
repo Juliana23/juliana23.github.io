@@ -92,8 +92,8 @@ header {
 }
 
 .workshop {
-  align-items: center;
   > img {
+    margin-right: 10px;
     max-width: 30vw;
     max-height: 30vh;
   }
