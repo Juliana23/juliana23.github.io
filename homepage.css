@@ -91,6 +91,12 @@ header {
   padding-bottom: 20px;
 }
 
+.workshop {
+  > img {
+    max-width: 15%;
+  }
+}
+
 #size_list {
   width: 200px;
 }
