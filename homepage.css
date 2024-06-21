@@ -92,10 +92,10 @@ header {
 }
 
 .workshop {
+  flex-wrap: wrap;
   > img {
     margin-right: 10px;
-    max-width: 30vw;
-    max-height: 30vh;
+    margin-bottom: 10px;
   }
 }
 
