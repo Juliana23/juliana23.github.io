@@ -91,6 +91,12 @@ header {
   padding-bottom: 20px;
 }
 
+.list-custom {
+  margin-top: 1rem;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
 .workshop {
   flex-wrap: wrap;
   > img {
