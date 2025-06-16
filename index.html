@@ -33,8 +33,14 @@
                       <li class="nav-item">
                         <a id="navWorkshop" class="buttonWorkshop nav-link" data-bs-dismiss="offcanvas" href="#">Ateliers</a>
                       </li>
-                      <li class="nav-item">
-                        <a id="navLearn" class="buttonLearn nav-link" data-bs-dismiss="offcanvas" href="#">Jeux</a>
+                      <li class="nav-item dropdown">
+                        <a id="navLearn" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Jeux
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a id="navBinary" class="buttonBinary dropdown-item" href="#">Binaire</a></li>
+                          <li><a id="navKeyword" class="buttonKeyword dropdown-item" href="#">Mot de passe</a></li>
+                        </ul>
                       </li>
                       <li class="nav-item">
                         <a id="navMeet" class="buttonMeet nav-link" data-bs-dismiss="offcanvas" href="#">Rencontrer L&V</a>
@@ -208,7 +214,7 @@
                 </div>
               </div>
             </div>
-            <div class="section-content section-learn text-center" id="learn" style="display: none;">
+            <div class="section-content section-learn text-center" id="learnBinary" style="display: none;">
               <h1 id="title">Image binaire</h1>
               <section>
                   <div id="parameters" class="d-flex">
@@ -220,6 +226,28 @@
                     <div id="result"></div>
                     <div id="grid"></div>
                   </div>
+              </section>
+            </div>
+            <div class="section-content section-learn text-center" id="learnKeyword" style="display: none;">
+              <h1 id="title">Mot de passe</h1>
+              <section>
+                <form class="row g-3">
+                  <div class="mb-3 row">
+                    <label for="inputTeamName" class="col-sm-2 col-form-label">Nom d'équipe</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext" id="inputTeamName" value="Les Minicodes">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3" onClick="validatePassword()">Envoyer</button>
+                  </div>
+                </form>
               </section>
             </div>
             <div class="section-content section-meet text-center" id="meet" style="display: none;">

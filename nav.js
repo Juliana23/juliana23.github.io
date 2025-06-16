@@ -1,8 +1,15 @@
-d3.selectAll('.buttonLearn').on('click', function(d) {
+d3.selectAll('.buttonBinary').on('click', function(d) {
 	d3.selectAll('.nav-link').classed('active', false);
 	d3.selectAll('.section-content').style('display','none');
 	d3.select('#navLearn').classed('active', true);
-	d3.select('#learn').style('display','block');
+	d3.select('#learnBinary').style('display','block');
+});
+
+d3.selectAll('.buttonKeyword').on('click', function(d) {
+	d3.selectAll('.nav-link').classed('active', false);
+	d3.selectAll('.section-content').style('display','none');
+	d3.select('#navLearn').classed('active', true);
+	d3.select('#learnKeyword').style('display','block');
 });
 
 d3.selectAll('.buttonHome').on('click', function(d) {
