@@ -7,5 +7,7 @@ function validatePassword(form) {
 	let password = document.getElementById("inputPassword").value;
 	if (password == 'ordinateur') {
 		alert(name + ' vous avez accompli votre mission, bravo ! Les machines vont de nouveau fonctionner correctement.');
-	}
+	} else {
+		alert(name + " le mot de passe n'a pas encore débloqué les machines... Mais ne perdez pas espoir ! Continuez vos efforts — la mission dépend de vous !");
+	} 
 }
