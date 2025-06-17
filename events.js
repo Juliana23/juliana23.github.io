@@ -14,5 +14,5 @@ function validatePassword(form) {
 	}
 	document.getElementById("inputPassword").value = "";
 	document.getElementById("inputTeamName").value = "";
-	return '';
+	window.onbeforeunload = null;
 }
