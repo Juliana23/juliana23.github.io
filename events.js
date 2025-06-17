@@ -6,8 +6,12 @@ function validatePassword(form) {
 	let name = document.getElementById("inputTeamName").value;
 	let password = document.getElementById("inputPassword").value;
 	if (password == 'ordinateur') {
-		alert(name + ' vous avez accompli votre mission, bravo ! Les machines vont de nouveau fonctionner correctement.');
+		document.getElementById('congratulations').play();
+		alert('Bravo ' + name + ' vous avez accompli votre mission ! Les machines vont de nouveau fonctionner correctement.');
 	} else {
-		alert(name + " le mot de passe n'a pas encore débloqué les machines... Mais ne perdez pas espoir ! Continuez vos efforts — la mission dépend de vous !");
-	} 
+		document.getElementById('failed').play();
+		alert('Dommage ' + name + " le mot de passe n'a pas encore débloqué les machines... Mais ne perdez pas espoir ! Continuez vos efforts — la mission dépend de vous !");
+	}
+	document.getElementById("inputPassword").value = "";
+	document.getElementById("inputTeamName").value = "";
 }

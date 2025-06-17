@@ -51,6 +51,11 @@ header {
     color: black;
 }
 
+.dropdown-menu {
+  background-color: black;
+  border-radius: 0%;
+}
+
 /**
 ** Footer
 **/
@@ -113,6 +118,10 @@ header {
   #size_list {
     display: none;
   }
+}
+
+.section-learn > section {
+  padding-top: 30px;
 }
 
 /**
