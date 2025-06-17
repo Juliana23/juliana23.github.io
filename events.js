@@ -5,7 +5,7 @@ d3.select('#print').on('click', function(d) {
 function validatePassword(form) {
 	let name = document.getElementById("inputTeamName").value;
 	let password = document.getElementById("inputPassword").value;
-	if (password == 'ordinateur') {
+	if (password && password.toLowerCase() === 'ordinateur') {
 		document.getElementById('congratulations').play();
 		alert('Bravo ' + name + ' vous avez accompli votre mission ! Les machines vont de nouveau fonctionner correctement.');
 	} else {
