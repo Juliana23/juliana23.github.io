@@ -244,12 +244,29 @@
                       <input type="text" class="form-control" id="inputPassword">
                     </div>
                   </div>
-                  <div class="col-auto">
-                    <button class="btn btn-dark mb-3" onClick="validatePassword()">Envoyer</button>
-                  </div>
+                  
                 </form>
-                <audio id="congratulations" src="./sounds/success.mp3" preload="auto"></audio>
-                <audio id="failed" src="./sounds/failed.mp3" preload="auto"></audio>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="validatePassword()">
+                  Envoyer
+                </button>
+                <audio id="congratulations" src="./sounds/success.mp3" preload="auto" type="audio/mpeg"></audio>
+                <audio id="failed" src="./sounds/failed.mp3" preload="auto" type="audio/mpeg"></audio>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Fin</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modalContent">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </section>
             </div>
             <div class="section-content section-meet text-center" id="meet" style="display: none;">

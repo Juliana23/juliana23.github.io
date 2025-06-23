@@ -7,12 +7,11 @@ function validatePassword(form) {
 	let password = document.getElementById("inputPassword").value;
 	if (password && password.toLowerCase().replace(/\s/g, '') === 'ordinateur') {
 		document.getElementById('congratulations').play();
-		alert('Bravo ' + name + ' vous avez accompli votre mission ! Les machines vont de nouveau fonctionner correctement.');
+		document.getElementById("modalContent").innerHTML = 'Bravo ' + name + ' vous avez accompli votre mission ! Les machines vont de nouveau fonctionner correctement.';
 	} else {
 		document.getElementById('failed').play();
-		alert('Dommage ' + name + " le mot de passe n'a pas encore débloqué les machines... Mais ne perdez pas espoir ! Continuez vos efforts — la mission dépend de vous !");
+		document.getElementById("modalContent").innerHTML = 'Dommage ' + name + " le mot de passe n'a pas encore débloqué les machines... Mais ne perdez pas espoir ! Continuez vos efforts — la mission dépend de vous !";
 	}
 	document.getElementById("inputPassword").value = "";
 	document.getElementById("inputTeamName").value = "";
-	window.onbeforeunload = null;
 }
