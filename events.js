@@ -1,8 +1,16 @@
-d3.select('#print').on('click', function(d) {
-	window.print();
-});
+const print = document.getElementById('print');
+const inputPassword = document.getElementById("inputPassword");
+const form = document.getElementById("formPassword");
 
-function validatePassword(form) {
+print.addEventListener("click", togglePrint);
+form.addEventListener("submit", validatePassword);
+inputPassword.addEventListener("keyup", toggleEvent);
+
+function togglePrint() {
+	window.print();
+}
+
+function validatePassword() {
 	let name = document.getElementById("inputTeamName").value;
 	let password = document.getElementById("inputPassword").value;
 	if (password && password.toLowerCase().replace(/\s/g, '') === 'ordinateur') {
@@ -14,4 +22,12 @@ function validatePassword(form) {
 	}
 	document.getElementById("inputPassword").value = "";
 	document.getElementById("inputTeamName").value = "";
+}
+
+function toggleEvent(event) {
+	event.preventDefault();
+		const button = document.getElementById("buttonPassword");
+		if (event.key === 'Enter') {
+			button.click();
+		}
 }
